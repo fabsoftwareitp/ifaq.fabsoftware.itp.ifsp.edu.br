@@ -6,10 +6,11 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: rgb(49, 49, 49);
     display: flex;
     margin: 0 auto;
     width: 70vw;
+    max-width: 1024px;
     flex-wrap: wrap;
     align-items: justify;
     justify-content: space-around;
@@ -20,21 +21,25 @@ body{
     max-width: 1224px;
 }
 section{
-    display: none;
+   
 }
 h1{
+    color: #fff;
+    width: 100vw;
     font-weight: 600;
     font-size: 40px;
     margin-top: 10%;
     padding: 5% 0;
     text-align: center;
-    color: rgba(52,53,65, 1);
+   
 }
 .pgt{
-    width: 300px;
+    font-size: 20px;
+    width: 400px;
+    margin: 1.5em 0;
     padding: .85em;
     border-radius: .375em;
-    background-color: rgba(247,247,248, 1);
+    background-color: rgb(187, 187, 190);
     text-align: center;
     color: rgba(52,53,65, 1);
 }
