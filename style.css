@@ -7,35 +7,38 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(49, 49, 49);
+}
+.caixaPerguntas{
     display: flex;
-    margin: 0 auto;
-    width: 70vw;
-    max-width: 1024px;
     flex-wrap: wrap;
-    align-items: justify;
+    align-items: center;
     justify-content: space-around;
 }
 .container{
     margin: 0 auto;
-    width: 80vw;
-    max-width: 1224px;
-}
-section{
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
 }
 h1{
+    letter-spacing: 5px;
     color: #fff;
-    width: 100vw;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 10%;
     padding: 5% 0;
     text-align: center;
    
 }
+p{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
 .pgt{
-    font-size: 20px;
-    width: 400px;
+    font-size: 28px;
+    width: 500px;
     margin: 1.5em 0;
     padding: .85em;
     border-radius: .375em;
