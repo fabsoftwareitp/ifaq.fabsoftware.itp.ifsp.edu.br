@@ -22,8 +22,8 @@ async function lerJson() {
       // recebe o texto da resposta
       utterance = new SpeechSynthesisUtterance("Resposta: " + e.resposta);
       // define o pitch e o rate da voz
-      utterance.pitch = pitch.value;
-      utterance.rate = rate.value;
+      utterance.pitch = 1.2;
+      utterance.rate = 1;
       // fala a resposta
       speechSynthesis.speak(utterance);
     };
