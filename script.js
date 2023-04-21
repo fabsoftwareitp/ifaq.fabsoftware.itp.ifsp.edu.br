@@ -1,4 +1,4 @@
-const caixaPerguntas = document.querySelector(".caixaPerguntas");
+const caixaPerguntas = document.querySelector(".swiper-wrapper");
 
 async function lerJson() {
   const arquivoJson = await fetch("data.json");
@@ -9,6 +9,7 @@ async function lerJson() {
     let newDiv = document.createElement("div");
     newDiv.innerText = e.pergunta;
 
+    newDiv.classList.add("swiper-slide");
     newDiv.classList.add("pgt");
 
     newDiv.onclick = function () {

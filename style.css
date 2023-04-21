@@ -10,15 +10,10 @@ body{
 }
 .caixaPerguntas{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
 }
 .container{
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 1024px;
 }
 h1{
@@ -37,6 +32,7 @@ p{
     font-size: 28px;
 }
 .pgt{
+    cursor: pointer;
     font-size: 28px;
     width: 500px;
     margin: 1.5em 0;
