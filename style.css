@@ -7,40 +7,43 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(49, 49, 49);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .caixaPerguntas{
     display: flex;
     align-items: center;
-}
-.container{
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 90vw;
+    max-height: 45vh;
 }
 h1{
     letter-spacing: 5px;
     color: #fff;
     font-weight: 600;
     font-size: 50px;
-    margin-top: 10%;
-    padding: 5% 0;
-    text-align: center;
-   
+    text-align: center; 
 }
 p{
     color: #fff;
     text-align: center;
     font-size: 28px;
+    margin: 0 5vw;
 }
 .pgt{
     cursor: pointer;
+
     font-size: 28px;
     width: 500px;
     margin: 1.5em 0;
     padding: .85em;
     border-radius: .375em;
     background-color: rgb(187, 187, 190);
-    text-align: center;
     color: rgba(52,53,65, 1);
+    text-align: center;
 }
 .pgt:hover{
     background-color: rgb(213, 210, 210);
