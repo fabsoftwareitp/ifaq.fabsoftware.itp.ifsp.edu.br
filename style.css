@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
+    --swiper-theme-color: white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,45 +8,69 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(49, 49, 49);
-}
-.caixaPerguntas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.container{
-    margin: 0 auto;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1024px;
+    justify-content: space-around;
 }
 h1{
     letter-spacing: 5px;
     color: #fff;
     font-weight: 600;
     font-size: 50px;
-    margin-top: 10%;
-    padding: 5% 0;
-    text-align: center;
-   
+    text-align: center; 
 }
 p{
     color: #fff;
     text-align: center;
     font-size: 28px;
+    margin: 0 5vw;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+#if{
+    color: rgb(13, 133, 13);
+}
+.button-stop{
+    font-size: 1.4em;
+    width: 6em;
+    height: 2.5em;
+    border-radius: 0.7em;
+    border: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(187, 187, 190);
+}
+.button-stop:hover{
+    background-color: rgb(219, 219, 219);
+}
+.swiper{
+    background-color: rgb(187, 187, 190);
+    height: 40vh;
+    width: 90vw;
+    color: rgb(39, 39, 39);
+    font-size: 3em;
+    text-align: center;
+    border-radius: 0.875em;
+    align-items: center;
+    cursor: pointer;
+}
+.swiper:hover{
+    background-color: rgb(219, 219, 219);
 }
 .pgt{
-    font-size: 28px;
-    width: 500px;
-    margin: 1.5em 0;
-    padding: .85em;
-    border-radius: .375em;
-    background-color: rgb(187, 187, 190);
-    text-align: center;
-    color: rgba(52,53,65, 1);
+    display: flex !important;
+    align-items: center;
+    
 }
-.pgt:hover{
-    background-color: rgb(213, 210, 210);
+.swiper-button{
+    position: relative;
+    top: auto !important;
+}
+#teste{
+    display: flex;
+    align-items: center;
 }
