@@ -1,8 +1,11 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0a6e1a&height=120&section=header"/>
 
 
+<div align="center" >
 
 <img width=20% src="https://upload.wikimedia.org/wikipedia/commons/7/78/Instituto_Federal_de_S%C3%A3o_Paulo_-_Marca_Vertical_2015.svg"/>
+
+</div>
 
 # IFAQ
 
