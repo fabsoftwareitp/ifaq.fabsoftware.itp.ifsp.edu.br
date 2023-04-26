@@ -27,11 +27,7 @@ p{
     font-size: 28px;
     margin: 0 5vw;
 }
-#titulo{
-    display: flex;
-    justify-content: center;
-}
-#if{
+.if{
     color: rgb(13, 133, 13);
 }
 .button-stop{
@@ -64,13 +60,13 @@ p{
 .pgt{
     display: flex !important;
     align-items: center;
-    
+    justify-content: center;
 }
 .swiper-button{
     position: relative;
     top: auto !important;
 }
-#teste{
+.slider{
     display: flex;
     align-items: center;
 }
