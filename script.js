@@ -1,5 +1,5 @@
 const caixaPerguntas = document.querySelector(".swiper-wrapper");
-const botaoParar = document.querySelector(".button-stop");
+const botaoParar = document.querySelector("#button-stop");
 async function lerJson() {
   const arquivoJson = await fetch("data.json");
   let data = await arquivoJson.json();

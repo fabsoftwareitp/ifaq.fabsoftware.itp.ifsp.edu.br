@@ -74,14 +74,14 @@ p{
     display: flex;
     align-items: center;
 }
-/* .swiper-pagination{
-    position:absolute;
-} */
+.swiper-pagination{
+    position: absolute !important;
+}
 @media (max-width: 1000px) {
     .swiper-button {
         display: none !important;
     }
-    html {
+    .slider {
         font-size: 0.9rem;
     }
 }
