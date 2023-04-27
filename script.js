@@ -28,7 +28,7 @@ async function lerJson() {
       // fala a resposta
       speechSynthesis.speak(utterance);
       botaoParar.onclick = function(){
-        speechSynthesis.cancel()
+        speechSynthesis.cancel();
       };
     };
 
