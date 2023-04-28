@@ -20,13 +20,17 @@ h1{
     letter-spacing: 5px;
     color: #fff;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 5em;
     text-align: center; 
 }
 p{
     text-align: center;
     font-size: 28px;
     margin: 0 5vw;
+}
+#subtext{
+    font-size: 1.3em;
+
 }
 .if{
     color: rgb(13, 133, 13);
@@ -47,6 +51,7 @@ p{
 .button-link{
     text-decoration: none;
     color: #d9d9d9;
+    padding: 1em;
 }
 .swiper{
     background-color: rgb(44, 46, 44);
@@ -90,11 +95,18 @@ p{
 .texto-desativo{
     display: none;
 }
+
 @media (max-width: 1000px) {
     .swiper-button {
         display: none !important;
     }
     .slider {
         font-size: 0.9rem;
+    }
+    .texto-resposta{
+        font-size: .68em;
+    }
+    .swiper{
+        height: 65vh;
     }
 }

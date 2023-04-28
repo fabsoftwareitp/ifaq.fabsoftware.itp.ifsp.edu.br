@@ -23,19 +23,19 @@ async function lerJson() {
     caixaPerguntas.appendChild(newDiv);
     
     newDiv.onclick = function () {
-  
+      speechSynthesis.cancel();
       // recebe o texto da pergunta
       let utterance = new SpeechSynthesisUtterance(e.pergunta);
       // define o pitch e o rate da voz
       utterance.pitch = 1.2;
-      utterance.rate = 1.5;
+      utterance.rate = 1.7;
       // fala a pergunta
       speechSynthesis.speak(utterance);
       // recebe o texto da resposta
       utterance = new SpeechSynthesisUtterance("Resposta: " + e.resposta);
       // define o pitch e o rate da voz
       utterance.pitch = 1.2;
-      utterance.rate = 1.5;
+      utterance.rate = 1.7;
       // fala a resposta
       speechSynthesis.speak(utterance);
 
