@@ -8,18 +8,15 @@ async function lerJson() {
 
   data.forEach((e) => {
     let newDiv = document.createElement("div");
-    let textoPergunta = document.createElement("span");
-    let textoResposta = document.createElement("span");
+    let texto = document.createElement("span");
      
-    textoPergunta.innerText = e.pergunta;
-    textoResposta.innerText = e.resposta;
+    texto.innerText = e.pergunta;
 
     newDiv.classList.add("swiper-slide");
-    textoPergunta.classList.add("texto-pergunta");
-    textoResposta.classList.add("texto-resposta"); 
+    texto.classList.add("texto-slide");
 
-    newDiv.appendChild(textoPergunta);  
-    newDiv.appendChild(textoResposta);  
+    newDiv.appendChild(texto);  
+ 
     caixaPerguntas.appendChild(newDiv);
     
     newDiv.onclick = function () {
@@ -41,19 +38,16 @@ async function lerJson() {
 
 
       utterance.onstart = function () {
-        textoPergunta.classList.add("texto-desativo");
-        textoResposta.classList.add("texto-ativo");   
+        texto.innerText = e.resposta;   
       }
       
       utterance.onend = function () {
-        textoPergunta.classList.remove("texto-desativo");
-        textoResposta.classList.remove("texto-ativo");
+        texto.innerText = e.pergunta;
       }
       
       botaoParar.onclick = function(){
         speechSynthesis.cancel();
-        textoPergunta.classList.remove("texto-desativo");
-        textoResposta.classList.remove("texto-ativo");  
+        texto.innerText = e.pergunta; 
       };
     };
     

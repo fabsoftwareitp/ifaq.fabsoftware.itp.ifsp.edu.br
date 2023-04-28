@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+
+* {
     --swiper-theme-color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
     color: #d9d9d9;
     box-sizing: border-box;
-}
-body{
+} 
+
+body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(97.54deg, #212221 35.49%, #2e2f2e 165.37%);
     
@@ -15,23 +17,27 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-h1{
+} 
+
+h1 {
     letter-spacing: 5px;
     color: #fff;
     font-weight: 600;
     font-size: 50px;
     text-align: center; 
-}
-p{
+} 
+
+p {
     text-align: center;
     font-size: 28px;
     margin: 0 5vw;
-}
-.if{
+} 
+
+.if {
     color: rgb(13, 133, 13);
-}
-.button{
+} 
+
+.button {
     font-size: 1.4em;
     width:fit-content;
     border-radius: 0.7em;
@@ -40,61 +46,76 @@ p{
     padding: 0.6em;
     cursor: pointer;
     background-color: rgb(44, 46, 44);
-}
-.button:hover{
+} 
+
+.button:hover {
     background-color: rgb(39, 41, 39);
-}
-.button-link{
+} 
+
+.button-link {
     text-decoration: none;
     color: #d9d9d9;
 }
-.swiper{
+
+/* --Swiper-- */
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
     background-color: rgb(44, 46, 44);
-    height: 40vh;
-    width: 90vw;
     color: rgb(39, 39, 39);
+
+    border-radius: 0.875em;
+    width: 90vw;
+
+    min-height: 30vh;
+    max-height: fit-content;
+
     font-size: 2em;
     text-align: center;
-    border-radius: 0.875em;
     align-items: center;
     cursor: pointer;
     position: relative;
 }
-.swiper:hover{
+
+.swiper:hover {
     background-color: rgb(39, 41, 39);
 }
-.swiper-slide{
+
+.swiper-wrapper {
+    max-height: fit-content !important;
+}
+
+.swiper-slide {
     display: flex !important;
     align-items: center;
     justify-content: center;
 }
-.swiper-button{
-    position: relative;
-    top: auto !important;
+
+.texto-slide {
+    margin: 1em 0.5em 1.5em 0.5em !important;
 }
-.slider{
-    display: flex;
-    align-items: center;
-}
-.swiper-pagination{
+
+.swiper-pagination {
     position: absolute !important;
     bottom: -3em;
 }
-.texto-resposta{
 
-    display: none;
+.swiper-button {
+    position: relative;
+    top: auto !important;
 }
-.texto-ativo{
-    display: block;
-}
-.texto-desativo{
-    display: none;
-}
+
+
 @media (max-width: 1000px) {
     .swiper-button {
         display: none !important;
     }
+
     .slider {
         font-size: 0.9rem;
-    }
+    }   
 }
