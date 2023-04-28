@@ -63,7 +63,7 @@ p{
 .swiper:hover{
     background-color: rgb(39, 41, 39);
 }
-.pgt{
+.swiper-slide{
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -79,6 +79,16 @@ p{
 .swiper-pagination{
     position: absolute !important;
     bottom: -3em;
+}
+.texto-resposta{
+
+    display: none;
+}
+.texto-ativo{
+    display: block;
+}
+.texto-desativo{
+    display: none;
 }
 @media (max-width: 1000px) {
     .swiper-button {
