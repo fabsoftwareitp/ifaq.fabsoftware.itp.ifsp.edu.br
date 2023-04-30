@@ -38,15 +38,21 @@ async function lerJson() {
 
 
       utterance.onstart = function () {
+        newDiv.classList.remove('animate__animated', 'animate__fadeInUp');
+        newDiv.classList.add('animate__animated', 'animate__fadeInDown');
         texto.innerText = e.resposta;   
       }
       
       utterance.onend = function () {
-        texto.innerText = e.pergunta;
+        newDiv.classList.remove('animate__animated', 'animate__fadeInDown');
+        newDiv.classList.add('animate__animated', 'animate__fadeInUp');
+        texto.innerText = e.pergunta;   
       }
       
       botaoParar.onclick = function(){
         speechSynthesis.cancel();
+        newDiv.classList.remove('animate__animated', 'animate__fadeInDown');
+        newDiv.classList.add('animate__animated', 'animate__fadeInUp');
         texto.innerText = e.pergunta; 
       };
     };
