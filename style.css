@@ -39,6 +39,11 @@ h1 {
     font-weight: 600;
     font-size: 3.2em ;
     text-align: center;
+    margin: 1em 0;
+}
+
+p{
+    text-align: center;
     margin: 1em 0; 
 } 
 
@@ -47,8 +52,7 @@ p {
     font-size: 1.5em;
     margin: 0.3em 5vw;
 }
-
-.subtext {
+.subtext{
     font-size: 1.3em;
 }
 
@@ -196,6 +200,7 @@ p {
       background-position: 100% 0;
     }
   }
+
 @media (max-width: 1000px) {
     .swiper-button {
         display: none !important;

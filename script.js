@@ -25,14 +25,14 @@ async function lerJson() {
       let utterance = new SpeechSynthesisUtterance(e.pergunta);
       // define o pitch e o rate da voz
       utterance.pitch = 1.2;
-      utterance.rate = 1.5;
+      utterance.rate = 1.7;
       // fala a pergunta
       speechSynthesis.speak(utterance);
       // recebe o texto da resposta
       utterance = new SpeechSynthesisUtterance("Resposta: " + e.resposta);
       // define o pitch e o rate da voz
       utterance.pitch = 1.2;
-      utterance.rate = 1.5;
+      utterance.rate = 1.7;
       // fala a resposta
       
       swiper.on("activeIndexChange", () => {
