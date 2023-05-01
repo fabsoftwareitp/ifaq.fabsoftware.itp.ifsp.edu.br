@@ -1,4 +1,4 @@
-const configSwiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     navigation: {
       nextEl: '.swiper-button-next',
