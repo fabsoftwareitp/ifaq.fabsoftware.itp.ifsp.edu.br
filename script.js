@@ -36,6 +36,12 @@ async function lerJson() {
       // fala a resposta
       speechSynthesis.speak(utterance);
 
+      swiper.on('activeIndexChange', () => {
+        speechSynthesis.cancel();
+        newDiv.classList.remove('animate__animated', 'animate__fadeInDown');
+        newDiv.classList.add('animate__animated', 'animate__fadeInUp');
+        texto.innerText = e.pergunta;
+      });
 
       utterance.onstart = function () {
         newDiv.classList.remove('animate__animated', 'animate__fadeInUp');
