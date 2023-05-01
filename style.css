@@ -53,7 +53,7 @@ p {
 }
 
 .if {
-    color: #0d850d;
+    color: #064606;
 } 
 .button {
     font-family: 'Montserrat', sans-serif;
@@ -134,18 +134,16 @@ p {
 .swiper-button {
     position: relative;
     top: auto !important;
-}
-.swiper-button-next {
     padding: 1.8em 1.7em 1.8em 1.85em;
-    border: solid #fff 1px;
     border-radius: 50%;
-    background-color: #ffffffbe;
+    background-color: rgba(44, 46, 44, 0.616);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     transition: 0.5s;
     margin-right: 0.4em;
 }
-.swiper-button-next::after {
+
+.swiper-button::after {
     background: linear-gradient(60deg, #4dca79, #37b864, #285394, #422e8a);
 	animation: gradient 20s ease infinite;
     background-clip: text;
@@ -154,49 +152,19 @@ p {
     animation: text-animation 5s infinite;
     transition: 0.5s;
 }
-.swiper-button-next:hover{
-    background-color: transparent;
+.swiper-button:hover{
+    background-color: rgb(39, 41, 39);
     transition: 0.5s;
+    scale: 1.1;
 }
-.swiper-button-next:hover::after{
+.swiper-button:hover::after{
     color: #fff;
     transition: 0.5s;
 }
-.swiper-button-next:active::after{
+.swiper-button:active::after{
     animation: next 0.09s ease-in;    
 }
-/*button prev*/
-.swiper-button-prev {
-    padding: 1.8em 1.9em 1.8em 1.7em;
-    border: solid #fff 1px;
-    border-radius: 50%;
-    background-color: #ffffffbe;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: 0.5s;
-    margin-left: 0.4em;
 
-}
-.swiper-button-prev::after {
-    background: linear-gradient(60deg, #4dca79, #37b864, #285394, #422e8a);
-	animation: gradient 20s ease infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: text-animation 5s infinite;
-    transition: 0.5s;
-}
-.swiper-button-prev:hover{
-    background-color: transparent;
-    transition: 0.5s;
-}
-.swiper-button-prev:hover::after{
-    color: #fff;
-    transition: 0.5s;
-}
-.swiper-button-prev:active::after{
-    animation: prev 0.09s ease-in;    
-}
 
 @keyframes next{
     0%{
