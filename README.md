@@ -21,14 +21,19 @@ Para o desenvolvimento foram utilizados as tecnologias:
 * JavaScript, 
 * CSS.
 
+E as bibliotecas:
+* SwiperJs para a implementação do slider,
+* AnimateCss para as animações.
 
 
 Afim de que as perguntas fossem faladas se utilizou a API "Web Speech API", atraves da interface "SpeechSynthesisUtterance", nativa da ferramenta. 
 Nela é possivel informar um texto, a velocidade de leitura e o tom da voz, para haver a repodução da fala. 
 
 # Equipe do Projeto
-* x
-* y
-* z
+
+* André Martins
+* Gabriel Machado
+* João Pedro Martins
+* Leonardo Luz
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0a6e1a&height=120&section=footer"/>

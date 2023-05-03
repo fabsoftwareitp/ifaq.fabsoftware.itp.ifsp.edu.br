@@ -9,6 +9,7 @@ async function lerJson() {
   data.forEach((e) => {
     let newDiv = document.createElement("div");
     let texto = document.createElement("span");
+    let primeiraChamada = true;
 
     texto.innerText = e.pergunta;
 
@@ -21,7 +22,7 @@ async function lerJson() {
 
     newDiv.onclick = function () {
       speechSynthesis.cancel();
-      pergunta(newDiv, texto, e);
+      primeiraChamada = reiniciar(newDiv, texto, e, primeiraChamada);
       // recebe o texto da pergunta
       let utterance = new SpeechSynthesisUtterance(e.pergunta);
       // define o pitch e o rate da voz
@@ -66,6 +67,15 @@ async function lerJson() {
 }
 
 lerJson();
+
+function reiniciar(newDiv, texto, e, primeiraChamada) {
+  if (!primeiraChamada) {
+    newDiv.classList.remove("animate__animated", "animate__fadeInDown");
+    newDiv.classList.add("animate__animated", "animate__fadeInUp");
+  }
+  texto.innerText = e.pergunta;
+  return primeiraChamada = false;
+}
 
 function pergunta(newDiv, texto, e) {
   newDiv.classList.remove("animate__animated", "animate__fadeInDown");
