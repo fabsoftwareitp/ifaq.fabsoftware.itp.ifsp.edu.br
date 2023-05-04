@@ -1,42 +1,46 @@
 [
     {
         "pergunta": "O que é o Instituto Federal de São Paulo câmpus Itapetininga?",
-        "resposta": "Instituto Federal de São Paulo câmpus Itapetininga é uma instituição pública federal de ensino superior, técnico e profissionalizante. Ele oferece cursos técnicos, de graduação e de pós-graduação nas áreas de tecnologia, ciências humanas e exatas."
+        "resposta": "O IFSP câmpus Itapetininga é uma instituição pública federal de ensino superior, o IFSP oferece cursos técnicos, de graduação e de pós-graduação."
     },
     {
         "pergunta": "Em qual área do conhecimento o câmpus Itapetininga do Instituto Federal de São Paulo atua?",
-        "resposta": "O câmpus Itapetininga do Instituto Federal de São Paulo foi fundado em 2008, a partir de uma unidade já existente da Escola Técnica Federal de São Paulo. Desde então, o câmpus tem se destacado pela qualidade do ensino e pela pesquisa científica aplicada em diversas áreas do conhecimento."
+        "resposta": "O câmpus se destaca pela qualidade do ensino e pela pesquisa científica aplicada em diversas áreas, como nas áreas de tecnologia, ciências humanas e exatas."
     },
     {
         "pergunta": "Quais são os cursos oferecidos pelo Instituto Federal de São Paulo câmpus Itapetininga?",
-        "resposta": "O câmpus Itapetininga do Instituto Federal oferece uma ampla variedade de cursos técnicos, de graduação e de pós-graduação. Alguns dos cursos disponíveis são: Técnico em Informática e eletromecânica, Bacharelado em Engenharia mecânica, Licenciatura em Matemática, entre outros."
+        "resposta": "O câmpus Itapetininga do Instituto Federal oferece uma ampla variedade de cursos alguns são: Técnico em Informática e eletromecânica, Engenharia mecânica, Licenciatura em Matemática."
     },
     {
         "pergunta": "Como é o câmpus Itapetininga do Instituto Federal de São Paulo em termos de infraestrutura?",
-        "resposta": "O câmpus conta com uma infraestrutura moderna, biblioteca, laboratórios, áreas de convivência, laboratório de informática, espaço Maker, e outras facilidades que contribuem para a qualidade de vida dos estudantes."
+        "resposta": "O câmpus conta com uma infraestrutura moderna, biblioteca, laboratórios, áreas de convivência, laboratório de informática e espaço Maker."
     },
     {
         "pergunta": "Quais são as atividades extracurriculares disponíveis para os alunos do câmpus Itapetininga do Instituto Federal de São Paulo?",
-        "resposta": "O câmpus Itapetininga oferece diversas atividades extracurriculares para os alunos, tais como: grupos de estudos, iniciação científica, projetos de extensão, palestras, eventos culturais e esportivos, feiras tecnológicas, entre outros. A vida estudantil no câmpus Itapetininga é bastante dinâmica e diversificada."
+        "resposta": "O câmpus Itapetininga oferece diversas atividades extracurriculares para os alunos, tais como: grupos de estudos, iniciação científica, projetos de extensão, palestras, eventos culturais e esportivos e feiras tecnológicas."
     },
     {
         "pergunta": "Como é a vida estudantil no câmpus Itapetininga do Instituto Federal de São Paulo?",
-        "resposta": "A vida estudantil no câmpus Itapetininga é bastante dinâmica e diversificada. Além das atividades acadêmicas, os alunos têm a oportunidade de participar de atividades extracurriculares, eventos, palestras, projetos de pesquisa e extensão, grupos de estudos, entre outras iniciativas."
+        "resposta": "A vida estudantil no câmpus Itapetininga é bastante dinâmica e diversificada. Além das atividades acadêmicas, os alunos têm a oportunidade de participar de atividades extracurriculares e eventos."
     },
     {
         "pergunta": "O Instituto Federal de São Paulo câmpus Itapetininga tem algum programa de bolsas de estudo ou financiamento estudantil?",
-        "resposta": "Sim, o câmpus Itapetininga possui programas de bolsas de estudo e financiamento estudantil para alunos que necessitam de apoio financeiro para custear seus estudos. Além disso, a instituição também oferece programas de assistência estudantil, que visam garantir a permanência e o sucesso acadêmico dos alunos."
+        "resposta": "Sim, o câmpus Itapetininga possui programas de bolsas de estudos, a fim de promover a pesquisa. Além disso, a instituição também oferece programas de assistência estudantil, que visam garantir a permanência e o sucesso acadêmico dos alunos."
     },
     {
         "pergunta": "Qual é a reputação do Instituto Federal de São Paulo câmpus Itapetininga, em termos de qualidade de ensino?",
-        "resposta": " O Instituto Federal de São Paulo é uma instituição renomada em todo o país, reconhecida pela excelência no ensino técnico, tecnológico e superior. O câmpus Itapetininga, em particular, tem uma reputação positiva em termos de qualidade de ensino, com uma equipe de professores altamente qualificados e uma infraestrutura moderna."
+        "resposta": " O IFSP é uma instituição renomada em todo o país, reconhecida pela excelência no ensino técnico, tecnológico e superior. O câmpus Itapetininga se destaca em termos de qualidade de ensino, com uma equipe de professores altamente qualificados e uma infraestrutura moderna."
     },
     {
-        "pergunta": "Como os alunos e ex-alunos do Instituto Federal de São Paulo câmpus Itapetininga avaliam sua experiência na instituição?",
-        "resposta": "Os alunos e ex-alunos do câmpus Itapetininga avaliam positivamente sua experiência na instituição, destacando a qualidade do ensino, a infraestrutura, o suporte oferecido aos estudantes, a diversidade de atividades extracurriculares e o clima acolhedor e colaborativo da comunidade acadêmica. Muitos ex-alunos também destacam que a formação recebida no IFSP contribuiu significativamente para sua inserção no mercado de trabalho e para o desenvolvimento de suas carreiras profissionais."
+        "pergunta": "Como os alunos do Instituto Federal de São Paulo câmpus Itapetininga avaliam sua experiência na instituição?",
+        "resposta": "Os alunos IFSP Itapetininga avaliam positivamente sua experiência na instituição, destacando a qualidade do ensino, a infraestrutura, o suporte oferecido aos estudantes, a diversidade de atividades extracurriculares e o clima acolhedor e colaborativo da comunidade acadêmica. "
+    },
+    {
+        "pergunta": "Como os ex-alunos do Instituto Federal de São Paulo câmpus Itapetininga avaliaram estudar na instituição?",
+        "resposta": "Muitos ex-alunos destacam que a formação recebida no IFSP contribuiu significativamente para sua inserção no mercado de trabalho e para o desenvolvimento de suas carreiras profissionais."
     },
     {
         "pergunta": "O câmpus Itapetininga do Instituto Federal de São Paulo oferece programas de intercâmbio?",
-        "resposta": "Para ingressar no Instituto Federal de São Paulo, câmpus Itapetininga, é preciso participar do processo seletivo realizado pelo câmpus, que geralmente ocorre uma vez ao ano. É necessário verificar as datas e os requisitos específicos para cada curso desejado. Além disso, também é possível ingressar por meio de transferência de outras instituições ou através de programas como o SISU e o PROUNI."
+        "resposta": "O IFSP câmpus Itapetininga oferece oportunidades de interâmbio através do ARINTER, A Assessoria de Relações Internacionais. Frequentemente, são abertos editais para selecionar alunos para os programas de intercâmbio."
     }
 ]

@@ -33,28 +33,50 @@ body {
 	}
 }
 
-h1 {
+.titulo {
     letter-spacing: 5px;
     color: #fff;
     font-weight: 600;
-    font-size: 3.2em ;
     text-align: center;
-    margin: 1em 0;
-} 
+    margin: 0.5em auto;
+}
+h1 {
+    font-size: 3.2em ;
+}
+
+h2 {
+    font-size: 1.7em ;
+    max-width: 75vw;
+}
 
 p {
-    text-align: center;
+    text-align:center;
     font-size: 1.5em;
-    margin: 0.3em 5vw;
+    margin: 0.7em 5vw;
+    padding: 0.5em;
+    width: fit-content;    
+    margin: 0.5em auto;
+    max-width: 90vw;
 }
-.subtext{
-    font-size: 1.3em;
+
+.texto-pagina-principal {
+    background-color: rgba(44, 46, 44, 0.616);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px 0.5px #3d3a3aa6;
+    border-radius: 0.6em;
+}
+
+.subtexto{
+    background-color: rgba(255, 0, 0, 0.547);
+    border-radius: 0.6em;
 }
 
 .if {
     color: #064606;
 } 
 .button {
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     width:fit-content;
@@ -63,6 +85,7 @@ p {
     margin: 1.5em auto;
     padding: 0.6em 1em 0.6em 1em;
     cursor: pointer;
+
     background-color: rgba(44, 46, 44, 0.616);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -202,6 +225,6 @@ p {
     }
 
     .slider {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }   
 }

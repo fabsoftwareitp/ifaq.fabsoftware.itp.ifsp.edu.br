@@ -9,6 +9,7 @@ async function lerJson() {
   data.forEach((e) => {
     let newDiv = document.createElement("div");
     let texto = document.createElement("span");
+    let primeiraChamada = true;
 
     texto.innerText = e.pergunta;
 
@@ -21,37 +22,33 @@ async function lerJson() {
 
     newDiv.onclick = function () {
       speechSynthesis.cancel();
+      primeiraChamada = reiniciar(newDiv, texto, e, primeiraChamada);
       // recebe o texto da pergunta
       let utterance = new SpeechSynthesisUtterance(e.pergunta);
       // define o pitch e o rate da voz
       utterance.pitch = 1.2;
-      utterance.rate = 1.7;
+      utterance.rate = 1.4;
       // fala a pergunta
       speechSynthesis.speak(utterance);
       // recebe o texto da resposta
       utterance = new SpeechSynthesisUtterance("Resposta: " + e.resposta);
       // define o pitch e o rate da voz
       utterance.pitch = 1.2;
-      utterance.rate = 1.7;
+      utterance.rate = 1.4;
       // fala a resposta
       
       swiper.on("activeIndexChange", () => {
         speechSynthesis.cancel();
-        newDiv.classList.remove("animate__animated", "animate__fadeInDown");
-        newDiv.classList.add("animate__animated", "animate__fadeInUp");
-        texto.innerText = e.pergunta;
+        pergunta(newDiv, texto, e);
       });
 
       utterance.onstart = function () {
-        newDiv.classList.remove("animate__animated", "animate__fadeInUp");
-        newDiv.classList.add("animate__animated", "animate__fadeInDown");
-        texto.innerText = e.resposta;
+        resposta(newDiv, texto, e);
+
       };
 
       utterance.onend = function () {
-        newDiv.classList.remove("animate__animated", "animate__fadeInDown");
-        newDiv.classList.add("animate__animated", "animate__fadeInUp");
-        texto.innerText = e.pergunta;
+        pergunta(newDiv, texto, e);
       };
       
       //proximo slide
@@ -63,12 +60,31 @@ async function lerJson() {
       //botão de parar
       botaoParar.onclick = function () {
         speechSynthesis.cancel();
-        newDiv.classList.remove("animate__animated", "animate__fadeInDown");
-        newDiv.classList.add("animate__animated", "animate__fadeInUp");
-        texto.innerText = e.pergunta;
+        pergunta(newDiv, texto, e);
       };
     };
   });
 }
 
 lerJson();
+
+function reiniciar(newDiv, texto, e, primeiraChamada) {
+  if (!primeiraChamada) {
+    newDiv.classList.remove("animate__animated", "animate__fadeInDown");
+    newDiv.classList.add("animate__animated", "animate__fadeInUp");
+  }
+  texto.innerText = e.pergunta;
+  return primeiraChamada = false;
+}
+
+function pergunta(newDiv, texto, e) {
+  newDiv.classList.remove("animate__animated", "animate__fadeInDown");
+  newDiv.classList.add("animate__animated", "animate__fadeInUp");
+  texto.innerText = e.pergunta;
+}
+
+function resposta(newDiv, texto, e) {
+  newDiv.classList.remove("animate__animated", "animate__fadeInUp");
+  newDiv.classList.add("animate__animated", "animate__fadeInDown");
+  texto.innerText = e.resposta;
+}
