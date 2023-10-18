@@ -33,5 +33,5 @@ E basta acessar a hospedagem local.
 [IFAQ](https://ifaq.fabsoftware.itp.ifsp.edu.br/perguntas.html)
 
 # Contribuição/Autores
-| [<img loading="lazy" src=https://avatars.githubusercontent.com/u/71268759?v=4" width=115><br><sub>Leonadro Domingos da Luz</sub>](https://github.com/leonardoDluz) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103156444?v=4" width=115><br><sub>Gabriel Machado</sub>](https://github.com/gabs1m) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/77406727?v=4" width=115><br><sub>André Augusto</sub>](https://github.com/andreaugusto-sourc) |[<img loading="lazy" src="https://avatars.githubusercontent.com/u/107441401?v=4" width=115><br><sub>João Pedro Martins</sub>](https://github.com/Martins-pedro23) |
-| :---: | :---: | :---: |:---: |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/71268759?v=4" width=115><br><sub>Leonardo Domingos da Luz</sub>](https://github.com/leonardoDluz)| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/77406727?v=4" width=115><br><sub>André Augusto</sub>](https://github.com/andreaugusto-sourc) |[<img loading="lazy" src="https://avatars.githubusercontent.com/u/107441401?v=4" width=115><br><sub>João Pedro Martins</sub>](https://github.com/Martins-pedro23) |
+| :---: | :---: | :---: |
