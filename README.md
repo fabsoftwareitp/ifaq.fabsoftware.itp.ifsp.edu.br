@@ -1,39 +1,37 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0a6e1a&height=120&section=header"/>
+# Space Invaders
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+# Descrição do Projeto
+![IFAQ](./Landing-Page-IFAQ.png)
 
 
-<div align="center" >
+O IFAQ é um aplicação desenvolvido no intuito de disponibilizar respostas para questões frequentes a respeito do IFSP Câmpus Itapetininga. Nele existe uma serie de perguntas, pré-definidas, que ao serem selecionadas são lidas e em seguida respondidas através de audio. Utilizando-se das bibliotecas SwiperJS e AnimateCsss e as tecnologias HTML, CSS, JavaScritp e NodeJS.
 
-<img width=20% src="https://upload.wikimedia.org/wikipedia/commons/7/78/Instituto_Federal_de_S%C3%A3o_Paulo_-_Marca_Vertical_2015.svg"/>
+# Status do Projeto
+Status: Finalizado
 
-</div>
+# Funcionalidades e Demonstração da Aplicação
+Afim de que as perguntas fossem faladas se utilizou a API "Web Speech API", atraves da interface "SpeechSynthesisUtterance", nativa da ferramenta. Nela é possivel informar um texto, a velocidade de leitura e o tom da voz, para haver a repodução da fala.
 
-# IFAQ
+# Instruções de Uso
+Para acessar o IFAQ localmente, deve ser feito o clonamento deste repositório.
 
-O IFAQ é um aplicação desenvolvido no intuito de disponibilizar respostas para questões frequentes a respeito do IFSP Câmpus Itapetininga. 
+1. `git clone`
 
-Nele existe uma serie de perguntas, pré-definidas, que ao serem selecionadas são lidas e em seguida respondidas através de audio.
+Após isso, executar no terminal, os comandos:
 
+2. `npm install`
+3. `npm start`
 
-# Desenvolvimento
+E basta acessar a hospedagem local.
 
-Para o desenvolvimento foram utilizados as tecnologias: 
-* HTML, 
-* JavaScript, 
-* CSS.
+# Acesso ao Projeto (Link do Projeto)
+[IFAQ](https://ifaq.fabsoftware.itp.ifsp.edu.br/perguntas.html)
 
-E as bibliotecas:
-* SwiperJs para a implementação do slider,
-* AnimateCss para as animações.
-
-
-Afim de que as perguntas fossem faladas se utilizou a API "Web Speech API", atraves da interface "SpeechSynthesisUtterance", nativa da ferramenta. 
-Nela é possivel informar um texto, a velocidade de leitura e o tom da voz, para haver a repodução da fala. 
-
-# Equipe do Projeto
-
-* André Martins
-* Gabriel Machado
-* João Pedro Martins
-* Leonardo Luz
-
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0a6e1a&height=120&section=footer"/>
+# Contribuição/Autores
+| [<img loading="lazy" src=https://avatars.githubusercontent.com/u/71268759?v=4" width=115><br><sub>Leonadro Domingos da Luz</sub>](https://github.com/leonardoDluz) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103156444?v=4" width=115><br><sub>Gabriel Machado</sub>](https://github.com/gabs1m) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/77406727?v=4" width=115><br><sub>André Augusto</sub>](https://github.com/andreaugusto-sourc) |[<img loading="lazy" src="https://avatars.githubusercontent.com/u/107441401?v=4" width=115><br><sub>João Pedro Martins</sub>](https://github.com/Martins-pedro23) |
+| :---: | :---: | :---: |:---: |
