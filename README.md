@@ -39,3 +39,7 @@ E basta acessar a hospedagem local.
 
 ## Contribuidores
 Danilo
+Luma
+Joni
+Leo
+Marcos
