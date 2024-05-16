@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Times', serif;
-	background-size: 400% 400%;
+	  background-size: 400% 400%;
     background-color: #f4f8f1;
     min-height: 100vh;
     max-height: max-content;
@@ -26,6 +26,7 @@ body {
     font-weight: 600;
     text-align: center;
 }
+
 
 h1 {
     font-size: 4rem ;
@@ -52,7 +53,7 @@ p {
     background-image: linear-gradient(to bottom, #0db90d, #16970a, #04520f);
     
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text;
     
     -webkit-text-fill-color: transparent;
 } 
@@ -62,6 +63,7 @@ p {
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: #00740a;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -69,71 +71,6 @@ p {
     justify-content: center;
   }
   
-  select { /*botão de seleção*/
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: 0;
-    font-family: 'Times', serif;
-    height: 3em;
-    background: #ff4343;
-    color: rgb(255, 255, 255);
-    border-radius: 0.8em;
-    box-shadow: 0 0 1em 0 rgba(104, 255, 3, 0.2);
-    cursor: pointer;
-    text-align: center;
-    margin: 0.5em auto;
-    padding: 0.5em;
-    width: fit-content;
-    font-size: large;
-    font-weight: bold;
-  }
-
-  select:hover {
-    box-shadow: 0 0 0.8em 0 #ff4343;
-  }
-  
-  select option {
-    color: inherit;
-    background-color: #cc5555;
-    text-align: center;
-  }
-  
-  select:focus {
-    outline: none;
-  }
-  
-  select::-ms-expand {
-    display: none;
-  }
-  
-  button {
-    font-family: 'Times', serif;
-    border-radius: 0.6em;
-    background: none;
-    border: 2px solid #096e09;
-    padding: 25px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 30px;
-    box-sizing: border-box;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  button:hover {
-    color: rgb(253, 253, 253);
-    background: linear-gradient(60deg, #0db90dc9, #16970ab9, #04520ec0);
-    scale: 1.05;
-    box-shadow: 0 0 0.8em 0 #0db90d;
-    }
-
-.bloco-logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
 
 .logo {
     height: 3.5rem;
@@ -152,4 +89,78 @@ p {
 
 .logo:hover {
     scale: 1.2;
+}
+
+.bloco-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+select { /*botão de seleção*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  font-family: 'Times', serif;
+  height: 3em;
+  background: #ff4343;
+  color: rgb(255, 255, 255);
+  border-radius: 0.8em;
+  box-shadow: 0 0 1em 0 rgba(104, 255, 3, 0.2);
+  cursor: pointer;
+  text-align: center;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  width: fit-content;
+  font-size: large;
+  font-weight: bold;
+}
+
+select:hover {
+  box-shadow: 0 0 0.8em 0 #ff4343;
+}
+
+select option {
+  color: inherit;
+  background-color: #cc5555;
+  text-align: center;
+}
+
+select:focus {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+button {
+  font-family: 'Times', serif;
+  border-radius: 0.6em;
+  background: none;
+  border: 2px solid #096e09;
+  padding: 25px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-sizing: border-box;
+  font-weight: bold;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+button:hover {
+  color: rgb(253, 253, 253);
+  background: linear-gradient(60deg, #0db90dc9, #16970ab9, #04520ec0);
+  scale: 1.05;
+  box-shadow: 0 0 0.8em 0 #0db90d;
+  }
+
+.pag {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
