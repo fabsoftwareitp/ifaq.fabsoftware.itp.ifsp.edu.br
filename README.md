@@ -38,4 +38,9 @@ E basta acessar a hospedagem local.
 
 
 ## Contribuidores
-Joni
+Danilo [Professor]
+Rafael [Professor]
+Leonardo [SeniorDev]
+Joni [Dev]
+Luma [Dev]
+Marcos K. [Dev]
