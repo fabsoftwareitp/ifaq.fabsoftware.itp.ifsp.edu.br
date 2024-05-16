@@ -35,3 +35,6 @@ E basta acessar a hospedagem local.
 # Contribuição/Autores
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/71268759?v=4" width=115><br><sub>Leonardo Domingos da Luz</sub>](https://github.com/leonardoDluz)| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/77406727?v=4" width=115><br><sub>André Augusto</sub>](https://github.com/andreaugusto-sourc) |[<img loading="lazy" src="https://avatars.githubusercontent.com/u/107441401?v=4" width=115><br><sub>João Pedro Martins</sub>](https://github.com/Martins-pedro23) |
 | :---: | :---: | :---: |
+
+## Contribuidores
+Luma
