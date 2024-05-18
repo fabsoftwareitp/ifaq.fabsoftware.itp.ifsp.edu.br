@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>IFAQ</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+
+  <style amp-custom>
+    amp-story {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000000;
+    }
+    
+    amp-story-page {
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <amp-story standalone 
+    title="EventosIF" 
+    publisher="Fabsoftware Tutoriais" 
+    publisher-logo-src="assets/logoif.jpg"
+    poster-portrait-src="assets/capaif.jpg">
+    <amp-story-page id="pagina1" auto-advance-after="20s">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="assets/FrenteIF.jpg" 
+          width="720" 
+          height="1280" 
+          layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer>
+        <h1 class="pergunta">Quais são as atividades extracurriculares e eventos disponíveis para os alunos participarem?</h1>                
+      </amp-story-grid-layer>
+      
+      <amp-story-grid-layer template="fill">
+        <div class="Fundo2" id="revealfadein"></div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill">
+        <amp-video autoplay loop
+          width="720"
+          height="1280"
+          layout="responsive"
+          style="opacity: 0;"
+          id="revealfadein">
+          <source src="assets/Fotos.mp4" type="video/mp4">
+        </amp-video>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill">
+        <amp-img src="assets/Fundo2.png" 
+          width="720" 
+          height="1280" 
+          layout="responsive"
+          style="opacity: 0;"
+          id="revealfadein">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer>
+        <h1 class="resposta" id="revealfadein">Oferecemos diversas atividades extracurriculares para os alunos, tais como: projetos de extensão, palestras, eventos culturais e esportivos e feiras tecnológicas</h1>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <amp-img src="assets/QuadradoCamisa.png" 
+          width="720" 
+          height="1280" 
+          layout="responsive"
+          id="revealfadein"
+          class="QuadradoCamisa">
+        </amp-img>
+      </amp-story-grid-layer>
+    </amp-story-page>
+  </amp-story>
+  <script src="script.js"></script>
+</body>
+
+</html>

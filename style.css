@@ -1,257 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.Fundo2 {
+    background-color: white;
+    opacity: 0;
+  }
 
-* {
-    --swiper-theme-color: rgb(255, 255, 255);
-    padding: 0;
-    margin: 0;
-    color: #d9d9d9;
-    box-sizing: border-box;
-} 
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(60deg, #4dca79, #37b864, #285394, #422e8a);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;  
-    min-height: 100vh;
-    max-height: max-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.titulo {
-    letter-spacing: 5px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-}
-
-h1 {
-    font-size: 4rem ;
-    margin: 0.5em;
-}
-
-h2 {
-    font-size: 1.7em ;
-    max-width: 75vw;
-    margin: 0.5em auto;
-}
-
-p {
-    text-align:center;
-    font-size: 1.5em;
-    margin: 0.7em 5vw;
-    padding: 0.5em;
-    width: fit-content;    
-    margin: 0.5em auto;
-    max-width: 90vw;
-}
-
-.texto-pagina-principal {
-    background-color: rgba(44, 46, 44, 0.616);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 5px 0.5px #3d3a3aa6;
-    border-radius: 0.6em;
-}
-
-.subtexto{
-    background-color: rgba(255, 0, 0, 0.547);
-    border-radius: 0.6em;
-}
-
-.if {
-    color: #064606;
-} 
-.button {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
+  h1 {
+    font-weight: normal;
     font-size: 1.4em;
-    width:fit-content;
-    border-radius: 0.6em;
-    border: transparent;
-    margin: 1.5em auto;
-    padding: 0.6em 1em 0.6em 1em;
-    cursor: pointer;
+  }
 
-    background-color: rgba(44, 46, 44, 0.616);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 5px 0.5px #3d3a3aa6;
-    transition: 0.3s;
-} 
+  .pergunta {
+    max-width: 150px;
+    margin: 60px auto;
+    color: #000000;
+    position: absolute;
+    top: -2%;
+    left: 7%;
+  }
 
-.button:hover {
-    background-color: rgb(39, 41, 39);
-    scale: 1.1;
-    transition: 0.3s;
-} 
-
-.button-link {
-    text-decoration: none;
-    color: #d9d9d9;
-    padding: 1em;
-}
-
-.bloco-logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo {
-    height: 3.5rem;
-    width: 3.5rem;
-    padding: 10px;
-    cursor: pointer;
-
-    background-color: rgba(44, 46, 44, 0.616);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    color: rgb(39, 39, 39);
-    box-shadow: 0px 0px 10px 1px #3d3a3aa6;
-    transition: 0.3s;
-    border-radius: 0.875rem;
-}
-
-.logo:hover {
-    scale: 1.2;
-}
-
-/* --Swiper-- */
-
-.slider {
-    display: flex;
-    align-items: center;
+  .videos {
     position: relative;
-}
+  }
 
-.swiper {
-    background-color: rgba(44, 46, 44, 0.616);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    color: rgb(39, 39, 39);
-    box-shadow: 0px 0px 10px 1px #3d3a3aa6;
-    transition: 0.3s;
-    border-radius: 0.875em;
-    width: 85vw;
-    font-family: 'Montserrat', sans-serif;
-    min-height: fit-content;
-    max-height: max-content;
-    font-size: 2em;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.swiper:hover {
-    background-color: rgb(39, 41, 39);
-    scale: 1.02;
-    transition: 0.3s;
-}
-
-.swiper-wrapper {
-    max-height: fit-content !important;
-}
-
-.swiper-slide {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-slide {
-    margin: 1em 0.5em 1.5em 0.5em !important;
-}
-
-/*swiper button*/
-
-.swiper-button {
+  .resposta {
+    max-width: 175px;
+    margin: 60px auto;
+    color: #000000;
     position: relative;
-    top: auto !important;
-    padding: 1.8em 1.7em 1.8em 1.85em;
-    border-radius: 50%;
-    background-color: rgba(44, 46, 44, 0.616);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: 0.5s;
-    margin-right: 0.4em;
-}
+    bottom: 45%;
+    right: -25%;
+    text-align: right;
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-.swiper-button::after {
-    background: linear-gradient(60deg, #4dca79, #37b864, #285394, #422e8a);
-	animation: gradient 20s ease infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: text-animation 5s infinite;
-    transition: 0.5s;
-}
-.swiper-button:hover{
-    background-color: rgb(39, 41, 39);
-    transition: 0.5s;
-    scale: 1.1;
-}
-.swiper-button:hover::after{
-    color: #fff;
-    transition: 0.5s;
-}
-.swiper-button:active::after{
-    animation: next 0.09s ease-in;    
-}
+  .QuadradoCamisa {
+    position: absolute;
+    width: 35%;
+    bottom: -4%;
+    left: -2%;
+    opacity: 0;
+  }
 
+  .Barrinha {
+    position: relative;
+    left: -40px;
+  }
 
-@keyframes next{
-    0%{
-        transform:translateX(0px)
-    }
-    50%{
-        transform:translateX(10px)
-    }
-    100%{
-        transform:translateX(0px)
-    }
-}
-@keyframes prev{
-    0%{
-        transform:translateX(0px)
-    }
-    50%{
-        transform:translateX(-10px)
-    }
-    100%{
-        transform:translateX(0px)
-    }
-}
-@keyframes text-animation {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100% 0;
+  @media screen and (min-height: 600px) {
+    .resposta {
+      bottom: 50%;
     }
   }
 
-@media (max-width: 1000px) {
-    .swiper-button {
-        display: none !important;
+  @media screen and (min-height: 700px) {
+    .resposta {
+      font-size: 1.3em;
+      bottom: 45%;
     }
+  }
 
-    .slider {
-        font-size: 0.75rem;
-    }   
-}
+  @media screen and (min-height: 800px) {
+    .resposta {
+      font-size: 1.2em;
+      bottom: 50%;
+    }
+  }
+
+  @media screen and (min-height: 1000px) {
+    .resposta {
+      font-size: 1.3em;
+      bottom: 55%;
+    }
+  }
+
+  @media screen and (min-height: 1100px) {
+    .resposta {
+      font-size: 1.1em;
+      bottom: 55%;
+    }
+  }
+
+  @media screen and (min-height: 1300px) {
+    .resposta {
+      font-size: 1.1em;
+      bottom: 55%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 750px) {
+    .resposta {
+      font-size: 1.2em;
+      bottom: 50%;
+    }
+  }
