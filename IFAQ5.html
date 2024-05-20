@@ -19,75 +19,6 @@
     amp-story-page {
       background-color: #000000;
     }
-
-    .Fundo2 {
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 50%;
-  opacity: 0;
-}
-
-.barrinha-verde {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 13px;
-  background-color: rgb(0, 255, 0);
-  opacity: 0;
-}
-
-h1 {
-  font-weight: normal;
-  font-size: 1.4em;
-}
-
-.pergunta {
-  max-width: 150px;
-  margin: 60px auto;
-  color: #000000;
-  position: absolute;
-  top: -2%;
-  left: 7%;
-}
-
-.videos {
-  position: relative;
-}
-
-.resposta {
-  max-width: 175px;
-  margin: 60px auto;
-  color: #000000;
-  position: relative;
-  bottom: 45%;
-  right: -25%;
-  text-align: right;
-  transform: translateY(100%);
-  opacity: 0;
-}
-
-.QuadradoCamisa {
-  position: absolute;
-  left: -10px;
-  width: 35%;
-  bottom: -10px;
-  opacity: 0;
-}
-
-@media screen and (min-height: 990px){
-  .QuadradoCamisa {
-    width: 30%;
-  }
-}
-
-@media screen and (min-width: 500px) and (min-height: 700px){
-  .QuadradoCamisa {
-    width: 30%;
-  }
-}
   </style>
 </head>
 
@@ -105,6 +36,20 @@ h1 {
           layout="responsive">
         </amp-img>
       </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <div class="Fundo2"></div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <div class="barrinha-verde"></div>
+      </amp-story-grid-lafyer>
+      <amp-story-grid-layer template="vertical">
+        <amp-img src="assets/QuadradoPergunta.png" 
+          width="720" 
+          height="1280" 
+          layout="responsive"
+          class="QuadradoPergunta">
+        </amp-img>
+      </amp-story-grid-layer>
       <amp-story-grid-layer>
         <h1 class="pergunta">Quais são as atividades extracurriculares e eventos disponíveis para os alunos participarem?</h1>                
       </amp-story-grid-layer>
@@ -114,17 +59,19 @@ h1 {
           width="720"
           height="1280"
           layout="responsive"
-          style="opacity: 0;"
-          id="revealfadein">
+          style="opacity: 1;"
+          id="revealfadei">
           <source src="assets/Fotos.mp4" type="video/mp4">
         </amp-video>
       </amp-story-grid-layer>
       
       <amp-story-grid-layer template="vertical">
-        <div class="Fundo2" id="revealfadein"></div>
+        <div class="Fundo3" id="revealfadei" style="opacity: 1;"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">          
-        <div class="barrinha-verde" id="revealfadein"></div>
+        <div class="barrinha-verde" id="revealfadei" style="opacity: 1;">
+          <h1 class="resposta" id="revealfadei" style="opacity: 1;">Oferecemos diversas atividades extracurriculares para os alunos, tais como: projetos de extensão, palestras, eventos culturais e esportivos e feiras tecnológicas</h1>
+        </div>
       </amp-story-grid-layer>
       
       <amp-story-grid-layer template="vertical">
@@ -133,11 +80,9 @@ h1 {
           height="1280" 
           layout="responsive"
           class="QuadradoCamisa"
-          id="revealfadein">
+          id="revealfadei"
+          style="opacity: 1;">
         </amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer>
-        <h1 class="resposta" id="revealfadein">Oferecemos diversas atividades extracurriculares para os alunos, tais como: projetos de extensão, palestras, eventos culturais e esportivos e feiras tecnológicas</h1>
       </amp-story-grid-layer>
     </amp-story-page>
   </amp-story>
