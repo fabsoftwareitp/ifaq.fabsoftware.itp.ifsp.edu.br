@@ -14,7 +14,7 @@ function typeWrite(elemento, delay = 0) {
   const resposta = document.querySelector('.resposta');
   setTimeout(() => {
     typeWrite(resposta);
-  }, 10000); // Atraso de 3 segundos antes de começar a digitar a resposta
+  }, 10000);
 
   function fadeInElement(element) {
     var opacity = 0;
@@ -35,3 +35,23 @@ function typeWrite(elemento, delay = 0) {
       fadeInElement(revealfadein);
     }, 10000);
   });
+
+  const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function updateSlides() {
+      slides.forEach((slide, index) => {
+        if (index === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+
+    updateSlides();
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlides();
+    }, 3000);
