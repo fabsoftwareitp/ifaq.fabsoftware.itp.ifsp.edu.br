@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 * {
     --swiper-theme-color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
-    color: #096e09; /*cor da letra do botão que vai para as perguntas*/
+    color: #096e09; 
     box-sizing: border-box;
 } 
 
 body {
-    font-family: 'Times', serif;
-	  background-size: 400% 400%;
+  font-family: "Quicksand", sans-serif;
+    background-size: 400% 400%;
     background-color: #f4f8f1;
     min-height: 100vh;
     max-height: max-content;
@@ -23,7 +22,7 @@ body {
 .titulo {
     letter-spacing: 5px;
     color: #000000;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -103,8 +102,8 @@ select { /*botão de seleção*/
   -moz-appearance: none;
   appearance: none;
   outline: 0;
-  font-family: 'Times', serif;
-  height: 3em;
+  font-family: "Quicksand", sans-serif;
+  height: em;
   background: #ff4343;
   color: rgb(255, 255, 255);
   border-radius: 0.8em;
@@ -137,7 +136,7 @@ select::-ms-expand {
 }
 
 button {
-  font-family: 'Times', serif;
+  font-family: "Quicksand", sans-serif;
   border-radius: 0.6em;
   background: none;
   border: 2px solid #096e09;
