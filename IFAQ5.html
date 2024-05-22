@@ -28,7 +28,7 @@
     publisher="Fabsoftware Tutoriais" 
     publisher-logo-src="assets/logoif.jpg"
     poster-portrait-src="assets/capaif.jpg">
-    <amp-story-page id="pagina1" auto-advance-after="20s">
+    <amp-story-page id="pagina1" auto-advance-after="20s" background-audio="Audios/Pato-Pergunta-Resposta.mp3">
       <amp-story-grid-layer template="fill">
         <amp-img src="assets/FrenteIF.jpg" 
           width="720" 
@@ -55,7 +55,7 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="fill">
-              <div class="slider">
+              <div class="slider" style="opacity: 0;" id="revealfadein">
                   <div class="slide"><img src="assets/Eleni.jpg" alt="Slide 1"></div>
                   <div class="slide"><img src="assets/Geek_xadrez.jpg" alt="Slide 2"></div>
                   <div class="slide"><img src="assets/Geek_pintura.jpg" alt="Slide 3"></div>
@@ -67,11 +67,11 @@
       </amp-story-grid-layer>
       
       <amp-story-grid-layer template="vertical">
-        <div class="Fundo3" id="revealfadei" style="opacity: 1;"></div>
+        <div class="Fundo3" id="revealfadein" style="opacity: 0;"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">          
-        <div class="barrinha-verde" id="revealfadei" style="opacity: 1;">
-          <h1 class="resposta" id="revealfadei" style="opacity: 1;">Oferecemos diversas atividades extracurriculares para os alunos, tais como: projetos de extensão, palestras, eventos culturais e esportivos e feiras tecnológicas</h1>
+        <div class="barrinha-verde" id="revealfadein" style="opacity: 0;">
+          <h1 class="resposta" id="revealfadein" style="opacity: 0;">Oferecemos diversas atividades extracurriculares para os alunos, tais como: projetos de extensão, palestras, eventos culturais e esportivos e feiras tecnológicas</h1>
         </div>
       </amp-story-grid-layer>
       
@@ -81,8 +81,8 @@
           height="1280" 
           layout="responsive"
           class="QuadradoCamisa"
-          id="revealfadei"
-          style="opacity: 1;">
+          id="revealfadein"
+          style="opacity: 0;">
         </amp-img>
       </amp-story-grid-layer>
     </amp-story-page>
