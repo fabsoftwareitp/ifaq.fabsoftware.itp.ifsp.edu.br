@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quadrados.css">
+
   <link rel="shortcut icon" href="img/if.webp" type="image/x-icon">
   <title>IFAQ</title>
 </head>
-
 <body>
+
+  <div class="quadrados">
+    <ul></ul>
+</div>
+
+
+<div class="pag">
   <div class="bloco-logos">
     <a href="https://fabsoftware.itp.ifsp.edu.br/">
       <img class="logo" src="img/fabsoftware.webp" alt="logo fábrica de software">
     </a>
 
-    <h1 class="titulo"><strong class="if">IF</strong>AQ</h1>
+    <h1 class="titulo"><strong class="if">IF</strong><strong class="aq">AQ</strong></h1>
 
     <a href="https://itp.ifsp.edu.br/">
       <img class="logo" src="img/if.webp" alt="logo IFSP">
     </a>
   </div>
 
-  <h2 class="titulo">Seja bem-vindo ao Instituto Federal de São Paulo câmpus Itapetininga!</h2>
-  
-  <div>
-    <p class="subtexto">Ligue o som e clique!</p>
-    <a href="./perguntas.html" class="button button-link">Ir para as Perguntas</a> 
+  <h2 class="titulo">Seja Bem-vindo ao Sistema de Perguntas e Respostas Sobre o IFSP - Câmpus Itapetininga!</h2>
+
+  <div class="container">
+    <select id="selecioneavoz" name="voz">
+      <option selected value="">Escolha um personagem</option>
+      <option value="VozPatoDonald.html">Pato Donald</option>
+      <option value="VozPicaPau.html">Pica Pau</option>
+      <option value="VozFaustaoAgressivo.html">Faustão Agressivo</option>
+    </select>
+    <button id="submit">Vamos para as perguntas</button>
   </div>
+</div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
