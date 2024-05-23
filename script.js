@@ -55,3 +55,15 @@ const slides = document.querySelectorAll('.slide');
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlides();
   }, 3000);
+
+document.body.addEventListener("click", (e) => {
+  const container = document.querySelector(".i-amphtml-system-layer-host");
+  const element = container.shadowRoot.querySelector(".i-amphtml-story-system-layer");
+  const state = element.hasAttribute("paused");
+
+  if(state) {
+    alert("tocando");
+  } else {
+    alert("pausado");
+  }
+})
