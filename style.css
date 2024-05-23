@@ -1,5 +1,3 @@
-
-
 .Fundo2 {
   background-color: white;
   position: absolute;
@@ -27,13 +25,13 @@
 
 h1 {
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.35em;
 }
 
 .pergunta {
   max-width: 165px;
   position: absolute;
-  top: 2%;
+  top: 3%;
   left: 35px;
   line-height: 1.4em;
 }
@@ -93,6 +91,11 @@ h1 {
     max-width: 540px;  
     bottom: auto;
   }
+
+  .pergunta {
+    max-width: 540px;
+    top: 13%;  
+  }
 }
 
 @media screen and (min-height: 1300px) {
@@ -106,7 +109,7 @@ h1 {
 
   .resposta {
     max-width: 710px;
-    bottom: -20px;
+    bottom: -190px;
   }
 }
 
