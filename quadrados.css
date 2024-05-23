@@ -62,7 +62,7 @@
     list-style: none;
     display: block;
     position: absolute;
-    bottom: -120px;
+    bottom: -120px; 
     animation: bot 3s infinite alternate;
   }
 
