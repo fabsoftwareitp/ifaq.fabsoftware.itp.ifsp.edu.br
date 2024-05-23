@@ -6,7 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="css/animate.min.css"
+  />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="shortcut icon" href="img/if.webp" type="image/x-icon">
+  <script src="scripts/array-flat.js"></script>
+  <script src="scripts/swiper-bundle.min.js"></script>
+  <script src="scripts/all.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="swiper.js"></script>
+  
   <title>IFAQ</title>
 </head>
 
@@ -22,12 +33,21 @@
       <img class="logo" src="img/if.webp" alt="logo IFSP">
     </a>
   </div>
-
-  <h2 class="titulo">Seja bem-vindo ao Instituto Federal de São Paulo câmpus Itapetininga!</h2>
   
-  <div>
-    <p class="subtexto">Ligue o som e clique!</p>
-    <a href="./perguntas.html" class="button button-link">Ir para as Perguntas</a> 
+  
+  <div class="slider">
+    <div class="swiper-button-prev swiper-button"></div>
+    
+    <div class="swiper">
+      <div class="swiper-wrapper"></div>  
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    
+    <div class="swiper-button-next swiper-button"></div>
   </div>
+  
+  <button class="button" id="button-stop">Parar</button>
+  
 </body>
 </html>

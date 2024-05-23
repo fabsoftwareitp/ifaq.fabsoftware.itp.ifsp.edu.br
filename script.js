@@ -1,124 +1,90 @@
-//funcionamento do botão de escolha
-document.getElementById("submit").addEventListener("click", function() {
-    var selectedVoice = document.getElementById("selecioneavoz").value;
+const caixaPerguntas = document.querySelector(".swiper-wrapper");
+const botaoParar = document.querySelector("#button-stop");
 
-    if (selectedVoice) {
-      window.location.href = selectedVoice;
-    } else {
-      alert("Por favor, escolha um personagem antes de prosseguir.");
-    }
+async function lerJson() {
+  const arquivoJson = await fetch("data.json");
+  let data = await arquivoJson.json();
+  data = Array.from(data);
+
+  data.forEach((e) => {
+    let newDiv = document.createElement("div");
+    let texto = document.createElement("span");
+    let primeiraChamada = true;
+
+    texto.innerText = e.pergunta;
+
+    newDiv.classList.add("swiper-slide");
+    texto.classList.add("texto-slide");
+
+    newDiv.appendChild(texto);
+
+    caixaPerguntas.appendChild(newDiv);
+
+    newDiv.onclick = function () {
+      speechSynthesis.cancel();
+      primeiraChamada = reiniciar(newDiv, texto, e, primeiraChamada);
+      // recebe o texto da pergunta
+      let utterance = new SpeechSynthesisUtterance(e.pergunta);
+      // define o pitch e o rate da voz
+      utterance.pitch = 1.2;
+      utterance.rate = 1.4;
+      // fala a pergunta
+      speechSynthesis.speak(utterance);
+      // recebe o texto da resposta
+      utterance = new SpeechSynthesisUtterance("Resposta: " + e.resposta);
+      // define o pitch e o rate da voz
+      utterance.pitch = 1.2;
+      utterance.rate = 1.4;
+      // fala a resposta
+      
+      swiper.on("activeIndexChange", () => {
+        speechSynthesis.cancel();
+        pergunta(newDiv, texto, e);
+      });
+
+      utterance.onstart = function () {
+        resposta(newDiv, texto, e);
+
+      };
+
+      utterance.onend = function () {
+        pergunta(newDiv, texto, e);
+      };
+      
+      //proximo slide
+      speechSynthesis.speak(utterance);
+      utterance.addEventListener('end', () => {
+        swiper.slideNext();
+      });
+
+      //botão de parar
+      botaoParar.onclick = function () {
+        speechSynthesis.cancel();
+        pergunta(newDiv, texto, e);
+      };
+    };
   });
-
-//movimento dos quadrados
-const ul = document.querySelector("ul");
-
-const random = (min, max) => Math.random() * (max - min) + min;
-
-const randomColors = ["#ff4343", "#00b602", "#0db90d"];
-
-
-for (let i = 0; i < 50; i++) {
-  const li = document.createElement("li");
-  
-  const size = Math.floor(random(0, 25));
-  const position = random(0, 100);
-  const delay = random(5, 1);
-  const duration = random(10, 40);
-
-  li.style.width = `${size}px`;
-  li.style.height = `${size}px`;
-  li.style.borderRadius = "20%";
-
-  li.style.backgroundColor = randomColors[Math.floor(random(0, 3))];
-
-  li.style.left = `${position}%`;
-
-  li.style.animationDelay = `${delay}s`;
-  li.style.animationDuration = `${duration}s`;
-
-  li.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, 
-                                                   ${Math.random()}, ${Math.random()})`;
-
-  ul.appendChild(li);
-
 }
 
-for (let i = 0; i < 250; i++) {
+lerJson();
 
-  const el = document.createElement("el");
+function reiniciar(newDiv, texto, e, primeiraChamada) {
+  if (!primeiraChamada) {
+    newDiv.classList.remove("animate__animated", "animate__fadeInDown");
+    newDiv.classList.add("animate__animated", "animate__fadeInUp");
+  }
+  texto.innerText = e.pergunta;
+  return primeiraChamada = false;
+}
 
-  const size = Math.floor(random(0, 25));
-  const position = random(0, 100);
-  const delay = random(5, 1);
-  const duration = random(10, 40);
+function pergunta(newDiv, texto, e) {
+  newDiv.classList.remove("animate__animated", "animate__fadeInDown");
+  newDiv.classList.add("animate__animated", "animate__fadeInUp");
+  texto.innerText = e.pergunta;
+}
 
-  el.style.width = `${size}px`;
-  el.style.height = `${size}px`;
-  el.style.borderRadius = "20%";
-
-  el.style.backgroundColor = randomColors[Math.floor(random(0, 3))];
-
-  el.style.left = `${position}%`;
-
-  el.style.animationDelay = `${delay}s`;
-  el.style.animationDuration = `${duration}s`;
-
-  el.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, 
-                                                   ${Math.random()}, ${Math.random()})`;
-
-  ul.appendChild(el);
-} 
-
-for (let i = 0; i < 350; i++) {
-
-    const al = document.createElement("al");
-
-    const size = Math.floor(random(0, 25));
-  
-    const position = random(0, 100);
-    const delay = random(5, 1);
-    const duration = random(10, 40);
-  
-    al.style.width = `${size}px`;
-    al.style.height = `${size}px`;
-    al.style.borderRadius = "20%";
-  
-    al.style.backgroundColor = randomColors[Math.floor(random(0, 3))];
-  
-    al.style.left = `${position}%`;
-  
-    al.style.animationDelay = `${delay}s`;
-    al.style.animationDuration = `${duration}s`;
-  
-    al.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, 
-                                                     ${Math.random()}, ${Math.random()})`;
-  
-    ul.appendChild(al);
-  } 
-
-  for (let i = 0; i < 75; i++) {
-
-    const ter = document.createElement("ter");
-
-    const size = Math.floor(random(0, 25));
-  
-    const position = random(0, 100);
-    const delay = random(5, 1);
-    const duration = random(10, 40);
-  
-    ter.style.width = `${size}px`;
-    ter.style.height = `${size}px`;
-    ter.style.borderRadius = "20%";
-  
-    ter.style.backgroundColor = randomColors[Math.floor(random(0, 3))];
-  
-    ter.style.left = `${position}%`;
-  
-    ter.style.animationDelay = `${delay}s`;
-    ter.style.animationDuration = `${duration}s`;
-  
-    ter.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, 
-                                                     ${Math.random()}, ${Math.random()})`;
-  
-    ul.appendChild(ter);
-  } 
+function resposta(newDiv, texto, e) {
+  newDiv.classList.remove("animate__animated", "animate__fadeInUp");
+  newDiv.classList.add("animate__animated", "animate__fadeInDown");
+  texto.innerText = e.resposta;
+}
