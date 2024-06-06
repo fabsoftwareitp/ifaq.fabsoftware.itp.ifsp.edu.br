@@ -75,7 +75,7 @@ h1 {
 
   .pergunta {
     max-width: 540px;
-    top: 13%;  
+    top: 13%;
   }
 }
 
@@ -99,7 +99,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .resposta {
     max-width: 270px;
     bottom: 90px;
