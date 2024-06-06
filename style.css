@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 .Fundo2 {
   background-color: white;
   position: absolute;
@@ -22,7 +26,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  width: 100%;
+  width: 200%;
   height: 13px;
   background-color: #39BF67;
 }
@@ -128,5 +132,6 @@ h1 {
 @media screen and (min-height: 600px) and (max-height: 700px) {
   .resposta {
     max-width: 240px;
+
   }
 }
