@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 
 .Fundo2 {
   background-color: white;
@@ -18,7 +16,7 @@
   height: 50%;
 }
 
-.Imagen {
+.Imagem {
   width: 150%;
 }
 
@@ -132,6 +130,5 @@ h1 {
 @media screen and (min-height: 600px) and (max-height: 700px) {
   .resposta {
     max-width: 240px;
-
   }
 }
