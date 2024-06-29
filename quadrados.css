@@ -1,0 +1,103 @@
+.quadrados{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none; /* para garantir que não interfira com o conteúdo */
+    background-color: transparent;
+    animation: backgroundAnimation 10s linear infinite;
+  }
+
+  /*quadrados até o topo*/
+  li {
+    list-style: none;
+    display: block;
+    position: absolute;
+    bottom: -120px;
+    animation: up 3s infinite alternate;
+  }
+
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-900px) rotate(900deg);
+    }
+  }
+
+  /*quadrados que vão até o meio*/
+  el {
+    list-style: none;
+    display: block;
+    position: absolute;
+    bottom: -120px;
+    animation: mid 3s infinite alternate;
+  }
+
+  @keyframes mid {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-400px) rotate(900deg);
+    }
+  }
+
+  /*quadrados bem baixos*/
+  al {
+    list-style: none;
+    display: block;
+    position: absolute;
+    bottom: -120px; 
+    animation: bot 3s infinite alternate;
+  }
+
+  @keyframes bot {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-250px) rotate(900deg);
+    }
+  }
+
+  /* quadrados até 3/4 da pagina*/
+  ter {
+    list-style: none;
+    display: block;
+    position: absolute;
+    bottom: -120px;
+    animation: tq 3s infinite alternate;
+  }
+
+  @keyframes tq {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-450px) rotate(900deg);
+    }
+  }

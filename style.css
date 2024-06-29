@@ -17,13 +17,13 @@
 }
 
 .Imagem {
-  width: 150%;
+  width: 105%;
 }
 
 .BarraVerde {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 200%;
   height: 13px;
   background-color: #39BF67;
 }

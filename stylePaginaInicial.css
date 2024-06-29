@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    --swiper-theme-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    color: #096e09; 
+    box-sizing: border-box;
+} 
+
+body {
+  font-family: "Quicksand", sans-serif;
+    background-size: 400% 400%;
+    background-color: #f4f8f1;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo {
+    letter-spacing: 5px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem ;
+    margin: 0.5em;
+}
+
+h2 {
+    font-size: 2em ;
+    max-width: 75vw;
+    margin: 0.5em auto;
+}
+
+p {
+    text-align:center;
+    font-size: 1.5em;
+    margin: 0.7em 5vw;
+    padding: 0.5em;
+    width: fit-content;    
+    margin: 0.5em auto;
+    max-width: 90vw;
+}
+
+.if {
+    background-image: linear-gradient(to bottom, #0db90d, #16970a, #04520f);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+} 
+
+.aq {
+    color: #ffffff00;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #00740a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 10px;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px 1px #0db90d96;
+    transition: 0.3s;
+    border-radius: 0.875rem;
+}
+
+.logo:hover {
+    scale: 1.2;
+}
+
+.bloco-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+select { /*botão de seleção*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  font-family: "Quicksand", sans-serif;
+  height: em;
+  background: #ff4343;
+  color: rgb(255, 255, 255);
+  border-radius: 0.8em;
+  box-shadow: 0 0 1em 0 rgba(104, 255, 3, 0.2);
+  cursor: pointer;
+  text-align: center;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  width: fit-content;
+  font-size: large;
+  font-weight: bold;
+}
+
+select:hover {
+  box-shadow: 0 0 0.8em 0 #ff4343;
+}
+
+select option {
+  color: inherit;
+  background-color: #cc5555;
+  text-align: center;
+}
+
+select:focus {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+  border-radius: 0.6em;
+  background: none;
+  border: 2px solid #096e09;
+  padding: 25px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-sizing: border-box;
+  font-weight: bold;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+button:hover {
+  color: rgb(253, 253, 253);
+  background: linear-gradient(60deg, #0db90dc9, #16970ab9, #04520ec0);
+  scale: 1.05;
+  box-shadow: 0 0 0.8em 0 #0db90d;
+  }
+
+.pag {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
